@@ -67,6 +67,10 @@ app.get('/msgs', (req, res) =>{
     });
 });
 
+app.get('/input', (req, res) =>{
+    res.render('input');
+});
+
 app.post('/msgs', (req, res) => {
     const {name, description} = req.body;
 
