@@ -1,7 +1,6 @@
 <h1>{{msg.name}}</h1>
 <p>{{msg.description}}</p>
 <button id="deleteBtn">Delete</button>
-<a href="/msgs">Back to home</a>
 <script>
     document.getElementById("deleteBtn").addEventListener("click", function() {
         fetch(`/msgs/{{msg.id}}`, {
